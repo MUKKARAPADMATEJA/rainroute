@@ -55,9 +55,6 @@ RainRoute/
 │   ├── rainroute_ui_screen2_manhole_alert.png# Screen 2: Manhole Displacement Hazard Modal
 │   └── rainroute_ui_screen3_offline_ble.png  # Screen 3: Zero-Data BLE Offline Broadcast
 │
-├── presentation/
-│   ├── RainRoute_Vishwakarma_Stage2_Deck.pptx # Official 26-slide submission deck & UN SDGs
-│   └── RainRoute_Vishwakarma_Stage2_Deck.pdf  # 1-Click browser previewable PDF presentation
 │
 └── schematics/
     └── rainroute_circuit_schematic.png        # 300 DPI master circuit schematic & wiring
