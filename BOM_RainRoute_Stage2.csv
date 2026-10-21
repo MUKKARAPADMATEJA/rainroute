@@ -1,0 +1,11 @@
+Item_Number,Component_Name,Part_Specification,Quantity,Vendor_Sourcing,Lead_Time_Days,Unit_Cost_INR,Total_Cost_INR
+1,Microcontroller Mainboard,ESP32-WROOM-32D Development Board (Dual Core 240MHz),1,Robu.in / Local Indian Store,2,520,520
+2,Water Level Sensor,JSN-SR04T 2.0 Waterproof Ultrasonic Transducer (IP67),1,ElectronicsComp.com / Local,2,380,380
+3,Motion & Tilt Sensor,MPU-6050 (GY-521) 6-DOF IMU + On-chip Thermometer,1,QuartzComponents / Local,2,160,160
+4,Solar Harvesting Panel,5V 500mA (2.5W) Monocrystalline Mini Solar Panel,1,Robu.in / Domestic,3,280,280
+5,Battery Storage Cell,18650 3.7V 2600 mAh Li-ion Rechargeable Cell + Holder,1,Local Indian Electronics Store,1,190,190
+6,Charging Controller Module,TP4056 CC/CV Lithium Charger with DW01 Protection,1,ElectronicsComp / Local,2,45,45
+7,Edge Data Retention,MicroSD SPI Adapter Breakout + 16GB SanDisk Card,1,Local Store / Amazon India,1,320,320
+8,Weatherproof Enclosure,120x80x55mm IP65 ABS Junction Box + 2x PG7 Glands,1,Local Electrical Market (Koti),2,260,260
+9,Wiring and Passives,Resistors (1k/2k ohm divider) + Jumper Wires + USB Cable,1 Set,Local Laboratory Stock,1,120,120
+,,,,,TOTAL PROTOTYPE BOM (INR),,2275
