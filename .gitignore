@@ -4,5 +4,6 @@ upload_via_token.py
 add_slide_26.py
 generate_ui_mockup.py
 update_readme.py
+update_slide_26_studio.py
 .DS_Store
 Thumbs.db

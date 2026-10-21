@@ -99,7 +99,7 @@ Whenever thunderstorm downpours degrade cellular/Wi-Fi signal, the node automati
 
 RainRoute features a dedicated cross-platform mobile application developed with **Flutter** (for Android & iOS), providing real-time telemetry visualization, vehicle-stratified hydrolock clearance advisories, and offline emergency broadcasting.
 
-![RainRoute Commuter Mobile Application UI](mobile_app/rainroute_mobile_app_ui.png)
+![RainRoute Commuter Mobile Application Studio Mockup](mobile_app/rainroute_mobile_mockup_studio.png)
 
 ### Core UI Screens & Commuter UX Architecture:
 
