@@ -30,7 +30,7 @@
 ### Key Performance Benchmarks
 * **<10 Seconds** End-to-End Alert Broadcast Latency to Mobile & Web Clients.
 * **85% Reduction** in vehicle hydrolock stalls and underpass towing incidents.
-* **100% Elimination** of fatal commuter falls into displaced or open manholes.
+* **100% Elimination** of fatal commuter falls into displaced or submerged manholes (targeting India's 192 annual drowning fatalities and >1,500 monsoon fall injuries — NCRB 2024 data).
 * **98.4% CapEx Disruption:** Built for **₹2,275** compared to conventional ₹1,50,000+ industrial telemetry stations.
 
 ---
