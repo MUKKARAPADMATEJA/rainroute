@@ -1,0 +1,5 @@
+# Local utility scripts
+PUSH_TO_GITHUB.bat
+upload_via_token.py
+.DS_Store
+Thumbs.db
