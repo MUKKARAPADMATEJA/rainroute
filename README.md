@@ -38,19 +38,28 @@
 ## 🛠️ Repository Directory Structure
 ```
 RainRoute/
-├── README.md                          # Project documentation, pinouts & specs
-├── BOM_RainRoute_Stage2.csv           # Itemized Bill of Materials (₹2,275)
+├── README.md                                 # Technical dossier, pinouts & UN SDG alignment
+├── BOM_RainRoute_Stage2.csv                  # Itemized prototype Bill of Materials (₹2,275)
 │
 ├── firmware/
-│   └── rainroute_esp32_node.ino       # ESP32 C++ firmware (DSP, SD queue, BLE beacon)
+│   └── rainroute_esp32_node.ino              # Production ESP32 firmware (DSP, SD queue, BLE)
 │
 ├── hardware_cad/
-│   ├── rainroute_ip65_enclosure.stl   # Binary 3D CAD model: IP65 ABS Enclosure
-│   ├── rainroute_manhole_pod.stl      # Binary 3D CAD model: Manhole Puck Pod
-│   └── rainroute_cad_assembly.png     # 3D exploded assembly drawing & FEA report
+│   ├── rainroute_ip65_enclosure.stl          # 3D printable IP65 roadside telemetry enclosure
+│   ├── rainroute_manhole_pod.stl             # 3D printable IP68 manhole displacement pod
+│   └── rainroute_cad_assembly.png            # 300 DPI exploded assembly drawing & FEA report
+│
+├── mobile_app/
+│   ├── rainroute_mobile_app_ui.png           # 3-Screen composite mobile UX mockup (300 DPI)
+│   ├── rainroute_ui_screen1_navigation.png   # Screen 1: Dynamic Hydrolock Live Navigator
+│   ├── rainroute_ui_screen2_manhole_alert.png# Screen 2: Manhole Displacement Hazard Modal
+│   └── rainroute_ui_screen3_offline_ble.png  # Screen 3: Zero-Data BLE Offline Broadcast
+│
+├── presentation/
+│   └── RainRoute_Vishwakarma_Stage2_Deck.pptx # Official 26-slide submission deck & UN SDGs
 │
 └── schematics/
-    └── rainroute_circuit_schematic.png # 300 DPI master circuit schematic & wiring
+    └── rainroute_circuit_schematic.png        # 300 DPI master circuit schematic & wiring
 ```
 
 ---
@@ -83,6 +92,30 @@ Whenever thunderstorm downpours degrade cellular/Wi-Fi signal, the node automati
 * **Depth <80 mm:** All vehicles cleared (Green).
 * **Depth 80–180 mm:** Two-Wheelers diverted to elevated flyovers (Red); City Transit Buses cleared (Green).
 * **Depth >400 mm:** Complete corridor shutdown; municipal barrier gates triggered.
+
+---
+
+## 📱 Commuter Mobile Application & Real-Time Alert UX
+
+RainRoute features a dedicated cross-platform mobile application developed with **Flutter** (for Android & iOS), providing real-time telemetry visualization, vehicle-stratified hydrolock clearance advisories, and offline emergency broadcasting.
+
+![RainRoute Commuter Mobile Application UI](mobile_app/rainroute_mobile_app_ui.png)
+
+### Core UI Screens & Commuter UX Architecture:
+
+1. **Screen 1: Dynamic Hydrolock Navigator**
+   * **Vehicle Clearance Profiler:** Stratified risk engine allows commuters to select their exact vehicle profile (2-Wheeler: 150mm exhaust limit | Car: 250mm | Transit Bus: 450mm).
+   * **Dynamic Detour Engine:** Real-time vector map detects waterlogged underpasses (Red >150mm) and computes instant flyover bypass routing (+3.2 min delta).
+   * **Hydrolock Advisory Card:** Computes exact submersion risk (+90mm over exhaust pipe) to prevent catastrophic engine seizure before entry.
+
+2. **Screen 2: Manhole Displacement Warning Modal**
+   * **Instant Hazard Interrupt:** Triggered within <500ms when roadside pod detects >15° lid tilt or >0.3g displacement impact shock.
+   * **Lane Action Directive:** Displays exact distance (110m) and mandates: `MERGE RIGHT TO CENTER LANE NOW` to prevent fatal falls.
+   * **Binaural Haptic Alert:** Transmits vibration pattern and voice prompt directly to rider's Bluetooth helmet communicator or phone.
+
+3. **Screen 3: Zero-Data Offline BLE Emergency UX**
+   * **Hardware-Level Beaconing:** Passing commuters receive direct BLE Eddystone push notifications within 80m without SIM signal, active 4G/5G, or cellular data.
+   * **Wi-Fi Emergency SSID:** ESP32 broadcasts `! WARNING: UNDERPASS FLOODED (310mm) - DIVERT !` directly visible in phone Wi-Fi settings.
 
 ---
 

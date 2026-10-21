@@ -1,5 +1,8 @@
 # Local utility scripts
 PUSH_TO_GITHUB.bat
 upload_via_token.py
+add_slide_26.py
+generate_ui_mockup.py
+update_readme.py
 .DS_Store
 Thumbs.db
